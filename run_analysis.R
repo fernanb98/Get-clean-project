@@ -18,13 +18,6 @@ if((length(args)==0)||(length(args)>2)){
   rootdir<-args[1]
   output<-"out.txt"
 }
-setwd(rootdir)
-
-#Define directory name where test and train sets will be merged
-condensed<-"condensed"
-
-#Remove directories created in a previous run of this program 
-unlink(condensed,recursive=TRUE)
 
 #Load helper functions
 result<-source("get_all_files.R")
@@ -32,6 +25,15 @@ result<-source("condense.R")
 result<-source("extract.R")
 
 library(dplyr)
+
+setwd(rootdir)
+
+#Define directory name where test and train sets will be merged
+condensed<-"condensed"
+
+
+#Remove directories created in a previous run of this program 
+unlink(condensed,recursive=TRUE)
 
 ############################################################################
 #
@@ -277,7 +279,7 @@ dfjoined<-join(dfrelabeled,subjects,activities)
 tidydf<-dotidy(dfjoined)
 
 result<-write.table(tidydf, file=output,col.names=F, row.names=F)
-print(paste("Please check your results at ",output))
+print(paste("Please check your results at ",output," on your dataset directory"))
 
 ###########################################################################
 #
