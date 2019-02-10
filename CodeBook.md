@@ -82,6 +82,7 @@ This project consist of five steps, for each one follows a description of activi
 1.- Merge the training and test sets to create one data set
 ===========================================================
 Activities:
+
 	A.-Get two lists of files, included in train and test subdirectories.
 	B.-Get the directory structure of train dataset(or test dataset, as they are equal). This means a list of all its 		subdirectories.
 	C.-Using B as a template, create a new directory structure, that will contain the merged train and test files. This 		directory will be called "condensed".
@@ -97,7 +98,6 @@ As this step only merges existing data, variable names and descriptions are the 
 Activities:
 
 	A.-Using the variable names included in features.txt, select those that include mean() or std(). These are (1:6,41:46,81:86,121:126,161:166,201,202,214,215,227,228,240,241,253,254,266:271,345:350,424:429,503,504,516,517,529,530,542,543)
-	
 	B.-Read condensed X_condensed.txt into a dataframe.
 	C.-Create a new dataframe(named dfextracted) extracting columns selected in A. 
 
@@ -144,6 +144,7 @@ Final tidydf complies with the following:
 	4.-There is no need of a column to link tables, as only one table is created
 
 Description of each one of the 68 columns of tidy dataset
+
 	1	Subject id
 	2	Activity name
 	3-5	Mean of (Time domain mean of body acceleration)  in X, Y and Z axis
