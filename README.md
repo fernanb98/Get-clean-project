@@ -15,40 +15,40 @@ Original data whas partitioned in two sets, where 70% of the volunteers were sel
 
 The original dataset and description files are structured as follows:
 
--UCI HAR Dataset
-	|-README.txt
-	|-activity_labels.txt
-	|-features.txt
-	|-features_info.txt
-	|------test
-		|-subject_test.txt
-		|-X_test.txt
-		|-y_test.txt
-		|--InertialSignals
-			|-body_acc_x_test.txt
-			|-body_acc_y_test.txt
-			|-body_acc_z_test.txt
-			|-body_gyro_x_test.txt
-			|-body_gyro_y_test.txt
-			|-body_gyro_z_test.txt
-			|-total_acc_x_test.txt
-			|-total_acc_y_test.txt
-			|-total_acc_z_test.txt
+	-UCI HAR Dataset   
+		|-README.txt 
+		|-activity_labels.txt 
+		|-features.txt
+		|-features_info.txt
+		|------test
+			|-subject_test.txt
+			|-X_test.txt
+			|-y_test.txt
+			|--InertialSignals
+				|-body_acc_x_test.txt
+				|-body_acc_y_test.txt
+				|-body_acc_z_test.txt
+				|-body_gyro_x_test.txt
+				|-body_gyro_y_test.txt
+				|-body_gyro_z_test.txt
+				|-total_acc_x_test.txt
+				|-total_acc_y_test.txt
+				|-total_acc_z_test.txt
 
-	|------train
-		|-subject_train.txt
-		|-X_train.txt
-		|-y_train.txt
-		|--InertialSignals
-			|-body_acc_x_train.txt
-			|-body_acc_y_train.txt
-			|-body_acc_z_train.txt
-			|-body_gyro_x_train.txt
-			|-body_gyro_y_train.txt
-			|-body_gyro_z_train.txt
-			|-total_acc_x_train.txt
-			|-total_acc_y_train.txt
-			|-total_acc_z_train.txt
+		|------train
+			|-subject_train.txt
+			|-X_train.txt
+			|-y_train.txt
+			|--InertialSignals
+				|-body_acc_x_train.txt
+				|-body_acc_y_train.txt
+				|-body_acc_z_train.txt
+				|-body_gyro_x_train.txt
+				|-body_gyro_y_train.txt
+				|-body_gyro_z_train.txt
+				|-total_acc_x_train.txt
+				|-total_acc_y_train.txt
+				|-total_acc_z_train.txt
 
 =========================================================================================
 
@@ -56,11 +56,11 @@ Files included in this repo
 
 =========================================================================================
 
-Codebook.md 			Code book of the output file, and full description of activities performed by run_analysis.R 					
-get_all_files.R			Code to scan directories of the dataset and obtain full list of files 
-condense.R			Code to merge files from the test and train dataset
-extract.R			Code to extract only mean and standard deviation related variables from dataset
-run_analysis.R			Main program 
+	Codebook.md                     Code book of the output file, and full description of activities performed by 						run_analysis.R       					
+	get_all_files.R			Code to scan directories of the dataset and obtain full list of files 
+	condense.R			Code to merge files from the test and train dataset
+	extract.R			Code to extract only mean and standard deviation related variables from dataset
+	run_analysis.R			Main program 
 
 =========================================================================================
 
@@ -70,13 +70,13 @@ How to run the script
 
 
 
-To run the script, from the command line:
-	1.-Create directory to download the dataset 
-	2.-Download the dataset from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip to 		directory created in 1.
-	3.-Create directory for program files
-	4.-Change your current directory to directory created in 3.
-	5.-Clone this repo using git clone
-	6.-run "Rscript run_analysis.R <dataset directory> <optional output file>" don't include < > symbols in your command. If 	you don't supply  an output file default is "out.txt" in your current directory.
+	To run the script, from the command line:
+		1.-Create directory to download the dataset 
+		2.-Download the dataset from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip to directory created in 1.
+		3.-Create directory for program files
+		4.-Change your current directory to directory created in 3.
+		5.-Clone this repo using git clone
+		6.-run "Rscript run_analysis.R <dataset directory> <optional output file>" don't include < > symbols in your command. If you don't supply  an output file default is "out.txt" in your current directory.
 
 
 If you run the script from Rstudio in step 5 type system("Rscript run_analysis.R <dataset directory> <optional output file>), note that first you should change your working directory to the location where you cloned this repo with setwd() or supply the full path. 
