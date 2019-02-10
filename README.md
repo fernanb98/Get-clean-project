@@ -61,6 +61,7 @@ Files included in this repo
 	condense.R			Code to merge files from the test and train dataset
 	extract.R			Code to extract only mean and standard deviation related variables from dataset
 	run_analysis.R			Main program 
+	tidy_final_result.txt		tidy separate dataset as required in step 5 of project
 
 =========================================================================================
 
