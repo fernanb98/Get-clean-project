@@ -116,9 +116,10 @@ relabel<-function(df,feat){
 join<-function(df,subject_file,activities_file,sep="", header=FALSE){
   
   #############################################################################
-  # join (df,file,sep,header)                                                 #   # This function adds subject and activity name columns to the data set      #
+  # join (df,file,sep,header)                                                 # 
+  # This function adds subject and activity name columns to the data set      #
   # Input: df is the data set                                                 #
-  #       file filename that contains subject performin each observation      #
+  #       file filename that contains subject performing each observation     #
   #       sep is column separator, header TRUE if file contains header        #
   # Output: dataframe with dataset including subject and activity name        #
   #############################################################################
